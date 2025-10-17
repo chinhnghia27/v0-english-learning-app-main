@@ -37,9 +37,9 @@ export default function CoursePage({ params }: { params: { courseId: string } })
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="mb-12">
-            <h2 className="mb-4 text-3xl font-bold">8 Units Học Tập</h2>
-            <p className="text-lg text-muted-foreground">
-              Chọn unit bạn muốn ôn luyện. Mỗi unit bao gồm 5 kỹ năng: Nghe, Nói, Đọc, Viết, Từ vựng.
+            <h2 className="mb-4 text-3xl font-extrabold">8 Units Học Tập</h2>
+            <p className="text-lg text-muted-foreground font-semibold">
+              Chọn unit bạn muốn ôn luyện. Mỗi unit bao gồm 5 kỹ năng: Từ vựng, Nghe, Nói, Đọc, Viết.
             </p>
           </div>
 

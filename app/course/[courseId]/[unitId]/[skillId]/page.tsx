@@ -29,12 +29,26 @@ export default function SkillPage({
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
         <div className="container relative mx-auto px-4">
-          <Button asChild variant="outline" className="mb-6 border-white/20 bg-white/10 text-white backdrop-blur-sm hover:bg-white/20">
-            <Link href={`/course/${course.slug}/${unit.slug}`}>
-              <ChevronLeft className="mr-2 h-4 w-4" />
-              Quay lại {unit.title}
-            </Link>
-          </Button>
+          <div className="mb-6 flex flex-wrap gap-3">
+            <Button asChild variant="outline" className="border-white/20 bg-white/10 text-white backdrop-blur-sm hover:bg-white/20">
+              <Link href={`/course/${course.slug}/${unit.slug}`}>
+                <ChevronLeft className="mr-2 h-4 w-4" />
+                Về {unit.title}
+              </Link>
+            </Button>
+            <Button asChild variant="outline" className="border-white/20 bg-white/10 text-white backdrop-blur-sm hover:bg-white/20">
+              <Link href={`/course/${course.slug}`}>
+                <ChevronLeft className="mr-2 h-4 w-4" />
+                Về {course.name}
+              </Link>
+            </Button>
+            <Button asChild variant="outline" className="border-white/20 bg-white/10 text-white backdrop-blur-sm hover:bg-white/20">
+              <Link href="/">
+                <ChevronLeft className="mr-2 h-4 w-4" />
+                Về trang chủ
+              </Link>
+            </Button>
+          </div>
           <div className="mb-4 text-5xl text-white">{skill.icon}</div>
           <h1 className="mb-4 text-5xl font-bold text-white">{skill.name}</h1>
           <p className="text-xl text-white/90">
@@ -50,7 +64,7 @@ export default function SkillPage({
             <div className="lg:col-span-2">
               {skill.exerciseUrls.map((url, index) => (
                 <div key={index} className="mb-8">
-                  <h2 className="mb-4 text-2xl font-bold">Bài Tập Tương Tác {index + 1}</h2>
+                  <h2 className="mb-4 text-2xl font-extrabold">Bài Tập Tương Tác {index + 1}</h2>
                   <div className="h-[800px] overflow-hidden rounded-lg border bg-muted">
                     <iframe
                       src={url}
