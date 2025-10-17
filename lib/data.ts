@@ -406,148 +406,333 @@ export const courses: Course[] = [
       vocabulary:
         i === 0
           ? [
+            {
+              term: "Relevant",
+              partOfSpeech: "adj",
+              translation: "Liên quan",
+              example: "This information is relevant to our discussion.",
+              exampleTranslation: "Thông tin này liên quan đến cuộc thảo luận của chúng ta.",
+            },
+            {
+              term: "Specific",
+              partOfSpeech: "adj",
+              translation: "Cụ thể",
+              example: "Can you provide a specific example?",
+              exampleTranslation: "Bạn có thể cung cấp một ví dụ cụ thể không?",
+            },
+            {
+              term: "Refrain from",
+              partOfSpeech: "v",
+              translation: "Kiềm chế (làm một việc gì)",
+              example: "Please refrain from making personal comments.",
+              exampleTranslation: "Vui lòng kiềm chế không bình luận cá nhân.",
+            },
+            {
+              term: "Religion",
+              partOfSpeech: "n",
+              translation: "Tôn giáo",
+              example: "We should avoid discussing religion at work.",
+              exampleTranslation: "Chúng ta nên tránh thảo luận về tôn giáo tại nơi làm việc.",
+            },
+            {
+              term: "Marital status",
+              partOfSpeech: "n",
+              translation: "Tình trạng hôn nhân",
+              example: "Marital status is a personal matter.",
+              exampleTranslation: "Tình trạng hôn nhân là vấn đề cá nhân.",
+            },
+            {
+              term: "Gossip about",
+              partOfSpeech: "v",
+              translation: "Buôn chuyện",
+              example: "It's unprofessional to gossip about colleagues.",
+              exampleTranslation: "Buôn chuyện về đồng nghiệp là không chuyên nghiệp.",
+            },
+            {
+              term: "Gossip",
+              partOfSpeech: "n",
+              translation: "Chuyện phiếm",
+              example: "Office gossip can damage relationships.",
+              exampleTranslation: "Chuyện phiếm văn phòng có thể làm hỏng mối quan hệ.",
+            },
+            {
+              term: "Small talk",
+              partOfSpeech: "n",
+              translation: "Chuyện xã giao",
+              example: "Small talk helps break the ice in meetings.",
+              exampleTranslation: "Chuyện xã giao giúp phá vỡ sự im lặng trong cuộc họp.",
+            },
+            {
+              term: "Promotion",
+              partOfSpeech: "n",
+              translation: "Sự thăng tiến",
+              example: "She received a promotion for her hard work.",
+              exampleTranslation: "Cô ấy được thăng tiến vì làm việc chăm chỉ.",
+            },
+            {
+              term: "Congratulate",
+              partOfSpeech: "v",
+              translation: "Chúc mừng",
+              example: "We should congratulate him on his achievement.",
+              exampleTranslation: "Chúng ta nên chúc mừng anh ấy về thành tích của mình.",
+            },
+            {
+              term: "Compliment",
+              partOfSpeech: "v",
+              translation: "Khen ngợi",
+              example: "It's good to compliment your colleagues' work.",
+              exampleTranslation: "Thật tốt khi khen ngợi công việc của đồng nghiệp.",
+            },
+            {
+              term: "Etiquette",
+              partOfSpeech: "n",
+              translation: "Quy tắc ứng xử",
+              example: "Business etiquette is important in professional settings.",
+              exampleTranslation: "Quy tắc ứng xử kinh doanh rất quan trọng trong môi trường chuyên nghiệp.",
+            },
+            {
+              term: "Courtesy",
+              partOfSpeech: "n",
+              translation: "Tác phong lịch sự, sự lịch sự",
+              example: "Show courtesy to all your colleagues.",
+              exampleTranslation: "Hãy thể hiện sự lịch sự đối với tất cả đồng nghiệp.",
+            },
+            {
+              term: "Neutral",
+              partOfSpeech: "adj",
+              translation: "Trung lập, trung tính",
+              example: "Try to maintain a neutral tone in discussions.",
+              exampleTranslation: "Cố gắng duy trì một giọng điệu trung lập trong cuộc thảo luận.",
+            },
+            {
+              term: "Perspective",
+              partOfSpeech: "n",
+              translation: "Góc nhìn",
+              example: "Different perspectives lead to better solutions.",
+              exampleTranslation: "Các góc nhìn khác nhau dẫn đến các giải pháp tốt hơn.",
+            },
+            {
+              term: "Viewpoint",
+              partOfSpeech: "n",
+              translation: "Góc nhìn",
+              example: "I appreciate your viewpoint on this matter.",
+              exampleTranslation: "Tôi đánh giá cao góc nhìn của bạn về vấn đề này.",
+            },
+            {
+              term: "Insight",
+              partOfSpeech: "n",
+              translation: "Sự hiểu biết sâu sắc về một vấn đề",
+              example: "Your insight into the problem is valuable.",
+              exampleTranslation: "Sự hiểu biết sâu sắc của bạn về vấn đề này rất quý giá.",
+            },
+            {
+              term: "Transfer",
+              partOfSpeech: "v",
+              translation: "Chuyển cuộc gọi",
+              example: "I'll transfer your call to the manager.",
+              exampleTranslation: "Tôi sẽ chuyển cuộc gọi của bạn cho người quản lý.",
+            },
+            {
+              term: "Connect",
+              partOfSpeech: "v",
+              translation: "Kết nối",
+              example: "Let me connect you with the right department.",
+              exampleTranslation: "Để tôi kết nối bạn với bộ phận phù hợp.",
+            },
+            {
+              term: "Bring up",
+              partOfSpeech: "v",
+              translation: "Đề cập",
+              example: "I want to bring up an important issue.",
+              exampleTranslation: "Tôi muốn đề cập đến một vấn đề quan trọng.",
+            },
+          ]
+          : i === 1
+            ? [
               {
-                term: "Relevant",
+                term: "Appreciate",
+                partOfSpeech: "v",
+                translation: "trân trọng, ghi nhận",
+                example: "We appreciate your prompt payment.",
+                exampleTranslation: "Chúng tôi ghi nhận việc thanh toán nhanh chóng của bạn."
+              },
+              {
+                term: "Attach",
+                partOfSpeech: "v",
+                translation: "đính kèm",
+                example: "Please attach the report to your email.",
+                exampleTranslation: "Vui lòng đính kèm báo cáo vào email của bạn."
+              },
+              {
+                term: "Attachment",
+                partOfSpeech: "n",
+                translation: "tài liệu đính kèm (dành cho email)",
+                example: "The attachment contains the meeting agenda.",
+                exampleTranslation: "Tài liệu đính kèm chứa chương trình nghị sự của cuộc họp."
+              },
+              {
+                term: "Enclosure",
+                partOfSpeech: "n",
+                translation: "tài liệu đính kèm (dành cho thư tay)",
+                example: "The enclosure with this letter is my resume.",
+                exampleTranslation: "Tài liệu đính kèm với lá thư này là sơ yếu lý lịch của tôi."
+              },
+              {
+                term: "Complain about",
+                partOfSpeech: "phr v",
+                translation: "phàn nàn về",
+                example: "Customers complain about the slow service.",
+                exampleTranslation: "Khách hàng phàn nàn về dịch vụ chậm chạp."
+              },
+              {
+                term: "Complaint",
+                partOfSpeech: "n",
+                translation: "lời phàn nàn",
+                example: "We have received a complaint from a customer.",
+                exampleTranslation: "Chúng tôi đã nhận được một lời phàn nàn từ một khách hàng."
+              },
+              {
+                term: "Contact",
+                partOfSpeech: "v",
+                translation: "liên hệ",
+                example: "You can contact me by phone or email.",
+                exampleTranslation: "Bạn có thể liên hệ với tôi qua điện thoại hoặc email."
+              },
+              {
+                term: "Postpone",
+                partOfSpeech: "v",
+                translation: "trì hoãn",
+                example: "We have to postpone the meeting until next week.",
+                exampleTranslation: "Chúng ta phải hoãn cuộc họp đến tuần sau."
+              },
+              {
+                term: "Put off",
+                partOfSpeech: "phr v",
+                translation: "Trì hoãn (thân mật)",
+                example: "Don't put off your homework until the last minute.",
+                exampleTranslation: "Đừng trì hoãn bài tập về nhà của bạn cho đến phút cuối cùng."
+              },
+              {
+                term: "Require",
+                partOfSpeech: "v",
+                translation: "Yêu cầu",
+                example: "This job requires a lot of experience.",
+                exampleTranslation: "Công việc này đòi hỏi rất nhiều kinh nghiệm."
+              },
+              {
+                term: "Hesitate",
+                partOfSpeech: "v",
+                translation: "ngần ngại, do dự",
+                example: "Don't hesitate to ask if you have any questions.",
+                exampleTranslation: "Đừng ngần ngại hỏi nếu bạn có bất kỳ câu hỏi nào."
+              },
+              {
+                term: "Damage",
+                partOfSpeech: "n",
+                translation: "thiệt hại",
+                example: "The storm caused a lot of damage to the building.",
+                exampleTranslation: "Cơn bão đã gây ra nhiều thiệt hại cho tòa nhà."
+              },
+              {
+                term: "Assistance",
+                partOfSpeech: "n",
+                translation: "sự hỗ trợ",
+                example: "We need your assistance to complete this project.",
+                exampleTranslation: "Chúng tôi cần sự hỗ trợ của bạn để hoàn thành dự án này."
+              },
+              {
+                term: "Subject",
+                partOfSpeech: "n",
+                translation: "tiêu đề thư email",
+                example: "The subject of the email was 'Meeting Confirmation'.",
+                exampleTranslation: "Chủ đề của email là 'Xác nhận cuộc họp'."
+              },
+              {
+                term: "Signature",
+                partOfSpeech: "n",
+                translation: "chữ ký",
+                example: "Please put your signature at the bottom of the page.",
+                exampleTranslation: "Vui lòng đặt chữ ký của bạn ở cuối trang."
+              },
+              {
+                term: "Spam",
+                partOfSpeech: "n",
+                translation: "thư rác",
+                example: "My inbox is full of spam.",
+                exampleTranslation: "Hộp thư đến của tôi đầy thư rác."
+              },
+              {
+                term: "Long-standing",
                 partOfSpeech: "adj",
-                translation: "Liên quan",
-                example: "This information is relevant to our discussion.",
-                exampleTranslation: "Thông tin này liên quan đến cuộc thảo luận của chúng ta.",
+                translation: "lâu dài",
+                example: "We have a long-standing relationship with this client.",
+                exampleTranslation: "Chúng tôi có mối quan hệ lâu dài với khách hàng này."
               },
               {
-                term: "Specific",
+                term: "Prompt",
                 partOfSpeech: "adj",
-                translation: "Cụ thể",
-                example: "Can you provide a specific example?",
-                exampleTranslation: "Bạn có thể cung cấp một ví dụ cụ thể không?",
+                translation: "nhanh",
+                example: "Thank you for your prompt reply.",
+                exampleTranslation: "Cảm ơn bạn đã trả lời nhanh chóng."
               },
               {
-                term: "Refrain from",
-                partOfSpeech: "v",
-                translation: "Kiềm chế (làm một việc gì)",
-                example: "Please refrain from making personal comments.",
-                exampleTranslation: "Vui lòng kiềm chế không bình luận cá nhân.",
-              },
-              {
-                term: "Religion",
-                partOfSpeech: "n",
-                translation: "Tôn giáo",
-                example: "We should avoid discussing religion at work.",
-                exampleTranslation: "Chúng ta nên tránh thảo luận về tôn giáo tại nơi làm việc.",
-              },
-              {
-                term: "Marital status",
-                partOfSpeech: "n",
-                translation: "Tình trạng hôn nhân",
-                example: "Marital status is a personal matter.",
-                exampleTranslation: "Tình trạng hôn nhân là vấn đề cá nhân.",
-              },
-              {
-                term: "Gossip about",
-                partOfSpeech: "v",
-                translation: "Buôn chuyện",
-                example: "It's unprofessional to gossip about colleagues.",
-                exampleTranslation: "Buôn chuyện về đồng nghiệp là không chuyên nghiệp.",
-              },
-              {
-                term: "Gossip",
-                partOfSpeech: "n",
-                translation: "Chuyện phiếm",
-                example: "Office gossip can damage relationships.",
-                exampleTranslation: "Chuyện phiếm văn phòng có thể làm hỏng mối quan hệ.",
-              },
-              {
-                term: "Small talk",
-                partOfSpeech: "n",
-                translation: "Chuyện xã giao",
-                example: "Small talk helps break the ice in meetings.",
-                exampleTranslation: "Chuyện xã giao giúp phá vỡ sự im lặng trong cuộc họp.",
-              },
-              {
-                term: "Promotion",
-                partOfSpeech: "n",
-                translation: "Sự thăng tiến",
-                example: "She received a promotion for her hard work.",
-                exampleTranslation: "Cô ấy được thăng tiến vì làm việc chăm chỉ.",
-              },
-              {
-                term: "Congratulate",
-                partOfSpeech: "v",
-                translation: "Chúc mừng",
-                example: "We should congratulate him on his achievement.",
-                exampleTranslation: "Chúng ta nên chúc mừng anh ấy về thành tích của mình.",
-              },
-              {
-                term: "Compliment",
-                partOfSpeech: "v",
-                translation: "Khen ngợi",
-                example: "It's good to compliment your colleagues' work.",
-                exampleTranslation: "Thật tốt khi khen ngợi công việc của đồng nghiệp.",
-              },
-              {
-                term: "Etiquette",
-                partOfSpeech: "n",
-                translation: "Quy tắc ứng xử",
-                example: "Business etiquette is important in professional settings.",
-                exampleTranslation: "Quy tắc ứng xử kinh doanh rất quan trọng trong môi trường chuyên nghiệp.",
-              },
-              {
-                term: "Courtesy",
-                partOfSpeech: "n",
-                translation: "Tác phong lịch sự, sự lịch sự",
-                example: "Show courtesy to all your colleagues.",
-                exampleTranslation: "Hãy thể hiện sự lịch sự đối với tất cả đồng nghiệp.",
-              },
-              {
-                term: "Neutral",
+                term: "Formal",
                 partOfSpeech: "adj",
-                translation: "Trung lập, trung tính",
-                example: "Try to maintain a neutral tone in discussions.",
-                exampleTranslation: "Cố gắng duy trì một giọng điệu trung lập trong cuộc thảo luận.",
+                translation: "trang trọng",
+                example: "This is a formal event, so please dress appropriately.",
+                exampleTranslation: "Đây là một sự kiện trang trọng, vì vậy vui lòng ăn mặc phù hợp."
               },
               {
-                term: "Perspective",
-                partOfSpeech: "n",
-                translation: "Góc nhìn",
-                example: "Different perspectives lead to better solutions.",
-                exampleTranslation: "Các góc nhìn khác nhau dẫn đến các giải pháp tốt hơn.",
+                term: "Informal",
+                partOfSpeech: "adj",
+                translation: "thân mật",
+                example: "You can use informal language with your friends.",
+                exampleTranslation: "Bạn có thể sử dụng ngôn ngữ thân mật với bạn bè của mình."
               },
               {
-                term: "Viewpoint",
-                partOfSpeech: "n",
-                translation: "Góc nhìn",
-                example: "I appreciate your viewpoint on this matter.",
-                exampleTranslation: "Tôi đánh giá cao góc nhìn của bạn về vấn đề này.",
+                term: "Concerning",
+                partOfSpeech: "prep",
+                translation: "Về, liên quan đến",
+                example: "I am writing to you concerning the job opening.",
+                exampleTranslation: "Tôi viết thư cho bạn về việc mở cửa việc làm."
               },
               {
-                term: "Insight",
-                partOfSpeech: "n",
-                translation: "Sự hiểu biết sâu sắc về một vấn đề",
-                example: "Your insight into the problem is valuable.",
-                exampleTranslation: "Sự hiểu biết sâu sắc của bạn về vấn đề này rất quý giá.",
+                term: "Regarding",
+                partOfSpeech: "prep",
+                translation: "Về, liên quan đến",
+                example: "I have a question regarding your new product.",
+                exampleTranslation: "Tôi có một câu hỏi liên quan đến sản phẩm mới của bạn."
               },
               {
-                term: "Transfer",
+                term: "With regard to",
+                partOfSpeech: "prep",
+                translation: "Về, liên quan đến",
+                example: "With regard to your request, we have decided to approve it.",
+                exampleTranslation: "Về yêu cầu của bạn, chúng tôi đã quyết định phê duyệt nó."
+              },
+              {
+                term: "With reference to",
+                partOfSpeech: "prep",
+                translation: "Theo, theo như",
+                example: "With reference to our conversation, I am sending you the details.",
+                exampleTranslation: "Theo như cuộc trò chuyện của chúng ta, tôi đang gửi cho bạn các chi tiết."
+              },
+              {
+                term: "Look forward to",
+                partOfSpeech: "phr v",
+                translation: "Mong đợi",
+                example: "I look forward to hearing from you soon.",
+                exampleTranslation: "Tôi mong sớm nhận được phản hồi từ bạn."
+              },
+              {
+                term: "Regret",
                 partOfSpeech: "v",
-                translation: "Chuyển cuộc gọi",
-                example: "I'll transfer your call to the manager.",
-                exampleTranslation: "Tôi sẽ chuyển cuộc gọi của bạn cho người quản lý.",
-              },
-              {
-                term: "Connect",
-                partOfSpeech: "v",
-                translation: "Kết nối",
-                example: "Let me connect you with the right department.",
-                exampleTranslation: "Để tôi kết nối bạn với bộ phận phù hợp.",
-              },
-              {
-                term: "Bring up",
-                partOfSpeech: "v",
-                translation: "Đề cập",
-                example: "I want to bring up an important issue.",
-                exampleTranslation: "Tôi muốn đề cập đến một vấn đề quan trọng.",
-              },
+                translation: "tiếc",
+                example: "We regret to inform you that your application has been rejected.",
+                exampleTranslation: "Chúng tôi rất tiếc phải thông báo với bạn rằng đơn đăng ký của bạn đã bị từ chối."
+              }
             ]
-          : [
+            : [
               {
                 term: "Sample",
                 partOfSpeech: "n",
