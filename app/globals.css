@@ -125,3 +125,8 @@
     @apply bg-background text-foreground;
   }
 }
+
+.bg-texture-pattern {
+  background-image: url('/bg-texture.jpg');
+  background-repeat: repeat;
+}
