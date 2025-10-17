@@ -10,12 +10,12 @@ interface UnitCardProps {
 
 export function UnitCard({ unit, courseSlug }: UnitCardProps) {
   return (
-    <Card className="group overflow-hidden transition-all hover:shadow-lg">
+    <Card className="group flex flex-col overflow-hidden transition-all hover:shadow-lg">
       <CardHeader>
         <CardTitle className="text-xl">{unit.title}</CardTitle>
         <CardDescription>{unit.description}</CardDescription>
       </CardHeader>
-      <CardContent>
+      <CardContent className="mt-auto">
         <div className="mb-4 flex flex-wrap gap-2">
           {unit.skills.map((skill) => (
             <span key={skill.id} className="flex items-center gap-1 rounded-full bg-muted px-3 py-1 text-sm">
