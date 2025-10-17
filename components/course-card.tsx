@@ -12,7 +12,7 @@ export function CourseCard({ course }: CourseCardProps) {
     <Card className="group h-full flex flex-col overflow-hidden transition-all hover:shadow-lg">
       <div className={`h-2 ${course.color}`} />
       <CardHeader className="flex-1">
-        <CardTitle className="text-2xl">{course.name}</CardTitle>
+        <CardTitle className="text-2xl font-bold">{course.name}</CardTitle>
         <CardDescription className="text-base">{course.description}</CardDescription>
       </CardHeader>
       <CardContent className="mt-auto">
