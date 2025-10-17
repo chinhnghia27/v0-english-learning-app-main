@@ -1,5 +1,6 @@
 "use client"
 import { Button } from "@/components/ui/button"
+import { VerticalCutReveal } from "@/components/ui/vertical-cut-reveal"
 
 export function HeroSection() {
   const handleScrollToCourses = () => {
@@ -34,10 +35,12 @@ export function HeroSection() {
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-primary/20 via-background to-secondary/20 py-20 md:py-32">
       <div className="container mx-auto px-4">
-        <div className="mx-auto max-w-4xl text-center">
-          <h1 className="mb-6 text-balance text-5xl font-bold tracking-tight md:text-7xl">
-            Nơi Ôn Tập Tiếng Anh Thương Mại
-            <span className="block text-primary">Dành Riêng Cho Sinh Viên HAUI</span>
+        <div className="mx-auto max-w-6xl text-center">
+          <h1 className="mb-6 flex flex-col items-center text-5xl font-extrabold leading-[1.3] tracking-tight md:text-7xl">
+            <VerticalCutReveal containerClassName="flex justify-center whitespace-nowrap" transition={{ type: "spring", stiffness: 100, damping: 22 }}>Nơi Ôn Tập Tiếng Anh Thương Mại</VerticalCutReveal>
+            <span className="block text-primary">
+              <VerticalCutReveal transition={{ type: "spring", stiffness: 100, damping: 22 }}>Dành Riêng Cho Sinh Viên HAUI</VerticalCutReveal>
+            </span>
           </h1>
           <p className="mb-8 text-pretty text-lg text-muted-foreground md:text-xl">
             Nền tảng học tập tương tác dành cho sinh viên đại học Việt Nam. Ôn luyện 5 kỹ năng: Nghe, Nói, Đọc, Viết, Từ
