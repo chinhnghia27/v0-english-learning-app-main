@@ -366,44 +366,58 @@ export const courses: Course[] = [
     name: "Tiếng Anh TMCB 5",
     description: "English for information technology and software development",
     color: "bg-chart-5",
-    units: Array.from({ length: 8 }, (_, i) => ({
-      id: i + 1,
-      slug: `unit-${i + 1}`,
-      title: `Unit ${i + 1}: ${["Business Conversation", "Business Correspondence", "Business Meetings", "Marketing", "Customer Service", "Negotiation", "Human Resources", "Business Plan"][i]}`,
-      description: `Practice IT English for ${["computer basics", "coding concepts", "network systems", "data storage", "security protocols", "website creation", "cloud services", "artificial intelligence"][i]}`,
-      skills: [
-        {
-          id: "vocabulary",
-          name: "Vocabulary",
-          icon: "📝",
-          exerciseUrls: ["https://quizizz.com/embed/quiz/example", "https://wordwall.net/embed/example"],
-        },
-        {
-          id: "reading",
-          name: "Reading",
-          icon: "📖",
-          exerciseUrls: ["https://quizizz.com/embed/quiz/example", "https://wordwall.net/embed/example"],
-        },
-        {
-          id: "listening",
-          name: "Listening",
-          icon: "🎧",
-          exerciseUrls: ["https://quizizz.com/embed/quiz/example", "https://wordwall.net/embed/example"],
-        },
-        {
-          id: "writing",
-          name: "Writing",
-          icon: "✍️",
-          exerciseUrls: ["https://wordwall.net/embed/example", "https://quizizz.com/embed/quiz/example"],
-        },
-        {
-          id: "speaking",
-          name: "Speaking",
-          icon: "🗣️",
-          exerciseUrls: ["https://wordwall.net/embed/example", "https://quizizz.com/embed/quiz/example"],
-        },
-      ],
-      vocabulary:
+    units: Array.from({ length: 8 }, (_, i) => {
+      const vocabularyUrls =
+        i === 0
+          ? [
+              "https://quiz.com/play/46442731-6680-4f95-826d-294520344e43/",
+              "https://quizizz.com/embed/quiz/example",
+              "https://wordwall.net/embed/example",
+            ]
+          : ["https://quizizz.com/embed/quiz/example", "https://wordwall.net/embed/example"];
+
+      return {
+        id: i + 1,
+        slug: `unit-${i + 1}`,
+        title: `Unit ${i + 1}: ${
+          ["Business Conversation", "Business Correspondence", "Business Meetings", "Marketing", "Customer Service", "Negotiation", "Human Resources", "Business Plan"][i]
+        }`,
+        description: `Practice IT English for ${
+          ["computer basics", "coding concepts", "network systems", "data storage", "security protocols", "website creation", "cloud services", "artificial intelligence"][i]
+        }`,
+        skills: [
+          {
+            id: "vocabulary",
+            name: "Vocabulary",
+            icon: "📝",
+            exerciseUrls: vocabularyUrls,
+          },
+          {
+            id: "reading",
+            name: "Reading",
+            icon: "📖",
+            exerciseUrls: ["https://quizizz.com/embed/quiz/example", "https://wordwall.net/embed/example"],
+          },
+          {
+            id: "listening",
+            name: "Listening",
+            icon: "🎧",
+            exerciseUrls: ["https://quizizz.com/embed/quiz/example", "https://wordwall.net/embed/example"],
+          },
+          {
+            id: "writing",
+            name: "Writing",
+            icon: "✍️",
+            exerciseUrls: ["https://wordwall.net/embed/example", "https://quizizz.com/embed/quiz/example"],
+          },
+          {
+            id: "speaking",
+            name: "Speaking",
+            icon: "🗣️",
+            exerciseUrls: ["https://wordwall.net/embed/example", "https://quizizz.com/embed/quiz/example"],
+          },
+        ],
+        vocabulary:
         i === 0
           ? [
             {
@@ -898,7 +912,8 @@ export const courses: Course[] = [
                   exampleTranslation: "Đây là từ vựng mẫu.",
                 },
               ],
-    })),
+      };
+    }),
   },
   {
     id: "legal-english",

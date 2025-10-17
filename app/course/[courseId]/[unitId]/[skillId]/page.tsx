@@ -44,10 +44,10 @@ export default function SkillPage({
               {skill.exerciseUrls.map((url, index) => (
                 <div key={index} className="mb-8">
                   <h2 className="mb-4 text-2xl font-bold">Bài Tập Tương Tác {index + 1}</h2>
-                  <div className="aspect-video overflow-hidden rounded-lg border bg-muted">
+                  <div className="h-[800px] overflow-hidden rounded-lg border bg-muted">
                     <iframe
                       src={url}
-                      className="h-full w-full"
+                      className="h-full w-full overscroll-contain"
                       title={`${skill.name} Exercise ${index + 1}`}
                       allowFullScreen
                     />
