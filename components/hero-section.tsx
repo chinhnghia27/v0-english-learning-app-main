@@ -1,8 +1,12 @@
 "use client"
 import { Button } from "@/components/ui/button"
 import { VerticalCutReveal } from "@/components/ui/vertical-cut-reveal"
+import { motion, Variants } from "framer-motion"
+import { useState } from "react"
 
 export function HeroSection() {
+  const [isTitleAnimated, setIsTitleAnimated] = useState(false)
+
   const handleScrollToCourses = () => {
     const coursesSection = document.getElementById("courses")
     if (coursesSection) {
@@ -32,25 +36,57 @@ export function HeroSection() {
     }
   }
 
+  const contentVariants: Variants = {
+    hidden: { opacity: 0, y: -20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+        ease: "easeOut",
+      },
+    },
+  }
+
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-primary/20 via-background to-secondary/20 py-20 md:py-32">
       <div className="container mx-auto px-4">
         <div className="mx-auto max-w-6xl text-center">
           <h1 className="mb-6 flex flex-col items-center text-5xl font-extrabold leading-[1.3] tracking-tight md:text-7xl">
-            <VerticalCutReveal containerClassName="flex justify-center whitespace-nowrap" transition={{ type: "spring", stiffness: 100, damping: 22 }}>Nơi Ôn Tập Tiếng Anh Thương Mại</VerticalCutReveal>
+            <VerticalCutReveal
+              containerClassName="flex justify-center whitespace-nowrap"
+              transition={{ type: "spring", stiffness: 100, damping: 22 }}
+            >
+              Nơi Ôn Tập Tiếng Anh Thương Mại
+            </VerticalCutReveal>
             <span className="block text-primary">
-              <VerticalCutReveal transition={{ type: "spring", stiffness: 100, damping: 22 }}>Dành Riêng Cho Sinh Viên HAUI</VerticalCutReveal>
+              <VerticalCutReveal
+                transition={{ type: "spring", stiffness: 100, damping: 22 }}
+                onComplete={() => setIsTitleAnimated(true)}
+              >
+                Dành Riêng Cho Sinh Viên HAUI
+              </VerticalCutReveal>
             </span>
           </h1>
-          <p className="mb-8 text-pretty text-lg text-muted-foreground md:text-xl">
+          <motion.p
+            className="mb-8 text-pretty text-lg text-muted-foreground md:text-xl"
+            variants={contentVariants}
+            initial="hidden"
+            animate={isTitleAnimated ? "visible" : "hidden"}
+          >
             Nền tảng học tập tương tác dành cho sinh viên đại học Việt Nam. Ôn luyện 5 kỹ năng: Nghe, Nói, Đọc, Viết, Từ
             vựng với bài tập thú vị.
-          </p>
-          <div className="flex justify-center">
+          </motion.p>
+          <motion.div
+            className="flex justify-center"
+            variants={contentVariants}
+            initial="hidden"
+            animate={isTitleAnimated ? "visible" : "hidden"}
+          >
             <Button size="lg" className="w-full sm:w-auto" onClick={handleScrollToCourses}>
               Bắt Đầu Học Ngay
             </Button>
-          </div>
+          </motion.div>
         </div>
       </div>
       <div className="absolute -bottom-10 -left-10 h-40 w-40 rounded-full bg-primary/30 blur-3xl" />
