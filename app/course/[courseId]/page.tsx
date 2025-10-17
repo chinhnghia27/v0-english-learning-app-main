@@ -14,16 +14,23 @@ export default function CoursePage({ params }: { params: { courseId: string } })
 
   return (
     <main className="min-h-screen">
-      <div className={`${course.color} py-16 md:py-24`}>
-        <div className="container mx-auto px-4">
-          <Button asChild variant="ghost" className="mb-6 text-primary-foreground hover:bg-primary-foreground/10">
+      <div className="relative overflow-hidden py-16 md:py-24">
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: `url(https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg)`,
+          }}
+        />
+        <div className="absolute inset-0 bg-black/60" />
+        <div className="container relative mx-auto px-4">
+          <Button asChild variant="outline" className="mb-6 border-white/20 bg-white/10 text-white backdrop-blur-sm hover:bg-white/20">
             <Link href="/">
               <ChevronLeft className="mr-2 h-4 w-4" />
               Về Trang Chủ
             </Link>
           </Button>
-          <h1 className="mb-4 text-5xl font-bold text-foreground">{course.name}</h1>
-          <p className="text-xl text-primary-foreground/90">{course.description}</p>
+          <h1 className="mb-4 text-5xl font-bold text-white">{course.name}</h1>
+          <p className="text-xl text-white/90">{course.description}</p>
         </div>
       </div>
 
