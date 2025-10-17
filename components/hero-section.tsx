@@ -83,7 +83,7 @@ export function HeroSection() {
             initial="hidden"
             animate={isTitleAnimated ? "visible" : "hidden"}
           >
-            <Button size="lg" className="w-full sm:w-auto" onClick={handleScrollToCourses}>
+            <Button size="lg" className="w-full sm:w-auto font-bold cursor-pointer" onClick={handleScrollToCourses}>
               Bắt Đầu Học Ngay
             </Button>
           </motion.div>

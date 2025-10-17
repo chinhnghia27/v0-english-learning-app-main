@@ -13,14 +13,14 @@ export function CourseCard({ course }: CourseCardProps) {
       <div className={`h-2 ${course.color}`} />
       <CardHeader className="flex-1">
         <CardTitle className="text-2xl font-bold">{course.name}</CardTitle>
-        <CardDescription className="text-base">{course.description}</CardDescription>
+        <CardDescription className="text-base font-semibold">{course.description}</CardDescription>
       </CardHeader>
       <CardContent className="mt-auto">
         <div className="mb-4 flex items-center gap-2 text-sm text-muted-foreground">
           <span className="rounded-full bg-muted px-3 py-1">8 Units</span>
           <span className="rounded-full bg-muted px-3 py-1">5 Skills</span>
         </div>
-        <Button asChild className="w-full">
+        <Button asChild className="w-full font-bold">
           <Link href={`/course/${course.slug}`}>Xem Các Unit</Link>
         </Button>
       </CardContent>

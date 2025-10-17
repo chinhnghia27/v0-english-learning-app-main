@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { getCourse, getUnit } from "@/lib/data"
 import { VocabularySection } from "@/components/vocabulary-section"
-import { ChevronLeft } from "lucide-react"
+import { ChevronLeft, Home } from "lucide-react"
 
 export default function UnitPage({
   params,
@@ -35,6 +35,12 @@ export default function UnitPage({
               Về {course.name}
             </Link>
           </Button>
+          <Button asChild variant="outline" className="mb-6 ml-3 border-white/20 bg-white/10 text-white backdrop-blur-sm hover:bg-white/20">
+            <Link href="/">
+              <Home className="mr-2 h-4 w-4" />
+              Về trang chủ
+            </Link>
+          </Button>
           <h1 className="mb-4 text-5xl font-bold text-white">{unit.title}</h1>
           <p className="text-xl text-white/90">{unit.description}</p>
         </div>
@@ -43,8 +49,8 @@ export default function UnitPage({
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="mb-12">
-            <h2 className="mb-4 text-3xl font-bold">Chọn Kỹ Năng Để Luyện Tập</h2>
-            <p className="text-lg text-muted-foreground">
+            <h2 className="mb-4 text-3xl font-extrabold">Chọn Kỹ Năng Để Luyện Tập</h2>
+            <p className="text-lg text-muted-foreground font-semibold">
               Mỗi kỹ năng có bài tập tương tác giúp bạn cải thiện khả năng tiếng Anh chuyên ngành.
             </p>
           </div>
@@ -54,11 +60,11 @@ export default function UnitPage({
               <Card key={skill.id} className="group overflow-hidden transition-all hover:shadow-lg">
                 <CardHeader>
                   <div className="mb-2 text-5xl">{skill.icon}</div>
-                  <CardTitle className="text-2xl">{skill.name}</CardTitle>
-                  <CardDescription>Luyện tập kỹ năng {skill.name.toLowerCase()} với bài tập tương tác</CardDescription>
+                  <CardTitle className="text-2xl font-bold">{skill.name}</CardTitle>
+                  <CardDescription className="font-semibold">Luyện tập kỹ năng {skill.name.toLowerCase()} với bài tập tương tác</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <Button asChild className="w-full">
+                  <Button asChild className="w-full font-extrabold">
                     <Link href={`/course/${course.slug}/${unit.slug}/${skill.id}`}>Bắt Đầu Luyện Tập</Link>
                   </Button>
                 </CardContent>

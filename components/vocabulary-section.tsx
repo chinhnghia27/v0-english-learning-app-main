@@ -27,8 +27,8 @@ export function VocabularySection({ vocabulary }: VocabularySectionProps) {
     <section className="py-16">
       <div className="container mx-auto px-4">
         <div className="mb-12">
-          <h2 className="mb-4 text-3xl font-bold">Từ Vựng Chính</h2>
-          <p className="text-lg text-muted-foreground">Danh sách các từ vựng quan trọng trong unit này</p>
+          <h2 className="mb-4 text-3xl font-extrabold">Từ Vựng Chính</h2>
+          <p className="text-lg text-muted-foreground font-semibold">Danh sách các từ vựng quan trọng trong unit này</p>
         </div>
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
@@ -41,24 +41,24 @@ export function VocabularySection({ vocabulary }: VocabularySectionProps) {
                     <div className="flex items-start justify-between gap-2">
                       <div>
                         <div className="flex items-center gap-2">
-                          <span className="text-lg font-semibold text-foreground">{item.term}</span>
-                          <span className="inline-block rounded-full bg-primary/10 px-3 py-1 text-sm font-medium text-primary">
+                          <span className="text-lg font-bold text-foreground">{item.term}</span>
+                          <span className="inline-block rounded-full bg-primary/10 px-3 py-1 text-sm font-semibold text-primary">
                             {item.partOfSpeech}
                           </span>
                         </div>
-                        <div className="mt-1 text-sm text-muted-foreground">{item.translation}</div>
+                        <div className="mt-1 text-sm text-muted-foreground font-semibold">{item.translation}</div>
                       </div>
                     </div>
                   </div>
 
                   {/* Example sentence in English */}
                   <div className="mb-3 rounded-lg bg-blue-50 p-3 dark:bg-blue-950">
-                    <p className="text-sm italic text-foreground">{highlightTerm(item.example, item.term)}</p>
+                    <p className="text-sm italic text-foreground font-semibold">{highlightTerm(item.example, item.term)}</p>
                   </div>
 
                   {/* Example translation in Vietnamese */}
                   <div className="rounded-lg bg-green-50 p-3 dark:bg-green-950">
-                    <p className="text-sm text-muted-foreground">
+                    <p className="text-sm text-muted-foreground font-semibold">
                       {highlightTerm(item.exampleTranslation, item.translation)}
                     </p>
                   </div>
