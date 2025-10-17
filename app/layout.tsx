@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="vi">
-      <body className={`font-sans antialiased ${_nunitoSans.className}`}>
+      <body className={`font-sans antialiased bg-texture-pattern ${_nunitoSans.className}`}>
         {children}
         <Analytics />
       </body>
