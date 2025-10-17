@@ -8,7 +8,7 @@ const _nunitoSans = Nunito_Sans({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Website Giúp Ôn Tập Tiếng Anh Thương Mại Dành Cho Sinh Viên HAUI",
+  title: "Ôn Tập Tiếng Anh Thương Mại Dành Cho Sinh Viên HAUI",
   description: "Website miễn phí giúp sinh viên Đại học Công Nghiệp Hà Nội ôn tập Tiếng Anh Thương Mại một cách nhanh chóng, hiệu quả, và tiện lợi.",
   generator: "v0.app",
 }

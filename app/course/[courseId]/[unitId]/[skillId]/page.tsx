@@ -20,17 +20,24 @@ export default function SkillPage({
 
   return (
     <main className="min-h-screen">
-      <div className="bg-muted/50 py-12 md:py-16">
-        <div className="container mx-auto px-4">
-          <Button asChild variant="ghost" className="mb-6">
+      <div className="relative overflow-hidden py-16 md:py-24">
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: `url(https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg)`,
+          }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
+        <div className="container relative mx-auto px-4">
+          <Button asChild variant="outline" className="mb-6 border-white/20 bg-white/10 text-white backdrop-blur-sm hover:bg-white/20">
             <Link href={`/course/${course.slug}/${unit.slug}`}>
               <ChevronLeft className="mr-2 h-4 w-4" />
               Quay lại {unit.title}
             </Link>
           </Button>
-          <div className="mb-4 text-5xl">{skill.icon}</div>
-          <h1 className="mb-4 text-4xl font-bold">{skill.name}</h1>
-          <p className="text-lg text-muted-foreground">
+          <div className="mb-4 text-5xl text-white">{skill.icon}</div>
+          <h1 className="mb-4 text-5xl font-bold text-white">{skill.name}</h1>
+          <p className="text-xl text-white/90">
             Luyện tập kỹ năng {skill.name.toLowerCase()} trong {unit.title}
           </p>
         </div>
