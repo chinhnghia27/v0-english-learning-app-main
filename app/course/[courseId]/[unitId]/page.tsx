@@ -1,0 +1,67 @@
+import Link from "next/link"
+import { notFound } from "next/navigation"
+import { Button } from "@/components/ui/button"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { getCourse, getUnit } from "@/lib/data"
+import { VocabularySection } from "@/components/vocabulary-section"
+import { ChevronLeft } from "lucide-react"
+
+export default function UnitPage({
+  params,
+}: {
+  params: { courseId: string; unitId: string }
+}) {
+  const course = getCourse(params.courseId)
+  const unit = getUnit(params.courseId, params.unitId)
+
+  if (!course || !unit) {
+    notFound()
+  }
+
+  return (
+    <main className="min-h-screen">
+      <div className="bg-muted/50 py-12 md:py-16">
+        <div className="container mx-auto px-4">
+          <Button asChild variant="ghost" className="mb-6">
+            <Link href={`/course/${course.slug}`}>
+              <ChevronLeft className="mr-2 h-4 w-4" />
+              Về {course.name}
+            </Link>
+          </Button>
+          <h1 className="mb-4 text-4xl font-bold">{unit.title}</h1>
+          <p className="text-lg text-muted-foreground">{unit.description}</p>
+        </div>
+      </div>
+
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="mb-12">
+            <h2 className="mb-4 text-3xl font-bold">Chọn Kỹ Năng Để Luyện Tập</h2>
+            <p className="text-lg text-muted-foreground">
+              Mỗi kỹ năng có bài tập tương tác giúp bạn cải thiện khả năng tiếng Anh chuyên ngành.
+            </p>
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {unit.skills.map((skill) => (
+              <Card key={skill.id} className="group overflow-hidden transition-all hover:shadow-lg">
+                <CardHeader>
+                  <div className="mb-2 text-5xl">{skill.icon}</div>
+                  <CardTitle className="text-2xl">{skill.name}</CardTitle>
+                  <CardDescription>Luyện tập kỹ năng {skill.name.toLowerCase()} với bài tập tương tác</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <Button asChild className="w-full">
+                    <Link href={`/course/${course.slug}/${unit.slug}/${skill.id}`}>Bắt Đầu Luyện Tập</Link>
+                  </Button>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <VocabularySection vocabulary={unit.vocabulary} />
+    </main>
+  )
+}
