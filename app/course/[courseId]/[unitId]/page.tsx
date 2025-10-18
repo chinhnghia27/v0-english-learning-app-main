@@ -57,7 +57,7 @@ export default function UnitPage({
 
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {unit.skills.map((skill) => (
-              <Card key={skill.id} className="group overflow-hidden transition-all hover:shadow-lg">
+              <Card key={skill.id} className="group overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
                 <CardHeader>
                   <div className="mb-2 text-5xl">{skill.icon}</div>
                   <CardTitle className="text-2xl font-bold">{skill.name}</CardTitle>

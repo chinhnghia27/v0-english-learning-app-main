@@ -10,7 +10,7 @@ interface UnitCardProps {
 
 export function UnitCard({ unit, courseSlug }: UnitCardProps) {
   return (
-    <Card className="group flex flex-col overflow-hidden transition-all hover:shadow-lg">
+    <Card className="group flex flex-col overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
       <CardHeader>
         <CardTitle className="text-xl font-bold">{unit.title}</CardTitle>
         <CardDescription className="font-semibold">{unit.description}</CardDescription>

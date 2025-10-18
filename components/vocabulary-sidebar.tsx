@@ -10,7 +10,7 @@ interface VocabularySidebarProps {
 export function VocabularySidebar({ vocabulary, unitTitle }: VocabularySidebarProps) {
   return (
     <aside className="sticky top-4 h-fit rounded-xl border bg-card/80 p-6 shadow-lg backdrop-blur supports-[backdrop-filter]:bg-card/70">
-      <h3 className="mb-5 text-lg font-extrabold tracking-tight">Từ Vựng {unitTitle}</h3>
+      <h3 className="mb-5 text-xl font-extrabold tracking-tight text-primary text-center">Từ Vựng {unitTitle}</h3>
       <div className="space-y-3 max-h-[600px] overflow-y-auto overscroll-y-contain pr-1 custom-scrollbar">
         {vocabulary.map((vocab, index) => (
           <div

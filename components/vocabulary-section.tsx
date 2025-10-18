@@ -35,7 +35,7 @@ export function VocabularySection({ vocabulary }: VocabularySectionProps) {
           {/* Left column */}
           <div className="space-y-4">
             {vocabulary.slice(0, Math.ceil(vocabulary.length / 2)).map((item, index) => (
-              <Card key={index} className="overflow-hidden">
+              <Card key={index} className="overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
                 <CardContent className="pt-6">
                   <div className="mb-4">
                     <div className="flex items-start justify-between gap-2">
@@ -70,7 +70,7 @@ export function VocabularySection({ vocabulary }: VocabularySectionProps) {
           {/* Right column */}
           <div className="space-y-4">
             {vocabulary.slice(Math.ceil(vocabulary.length / 2)).map((item, index) => (
-              <Card key={index} className="overflow-hidden">
+              <Card key={index} className="overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
                 <CardContent className="pt-6">
                   <div className="mb-4">
                     <div className="flex items-start justify-between gap-2">
