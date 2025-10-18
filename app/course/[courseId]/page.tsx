@@ -34,7 +34,7 @@ export default function CoursePage({ params }: { params: { courseId: string } })
         </div>
       </div>
 
-      <section className="py-16">
+      <section className="pt-16 0 pb-8 0">
         <div className="container mx-auto px-4">
           <div className="mb-12">
             <h2 className="mb-4 text-3xl font-extrabold">8 Units Học Tập</h2>

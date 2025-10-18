@@ -42,7 +42,7 @@ export function VocabularySection({ vocabulary }: VocabularySectionProps) {
                       <div>
                         <div className="flex items-center gap-2">
                           <span className="text-lg font-bold text-foreground">{item.term}</span>
-                          <span className="inline-block rounded-full bg-primary/10 px-3 py-1 text-sm font-semibold text-primary">
+                          <span className="font-bold shrink-0 text-[12px] uppercase tracking-wide text-primary/80 bg-primary/10 px-1.5 py-0.5 rounded">
                             {item.partOfSpeech}
                           </span>
                         </div>
@@ -77,7 +77,7 @@ export function VocabularySection({ vocabulary }: VocabularySectionProps) {
                       <div>
                         <div className="flex items-center gap-2">
                           <span className="text-lg font-semibold text-foreground">{item.term}</span>
-                          <span className="inline-block rounded-full bg-primary/10 px-3 py-1 text-sm font-medium text-primary">
+                          <span className="font-bold shrink-0 text-[12px] uppercase tracking-wide text-primary/80 bg-primary/10 px-1.5 py-0.5 rounded">
                             {item.partOfSpeech}
                           </span>
                         </div>

@@ -460,7 +460,7 @@ export const courses: Course[] = [
             {
               term: "Refrain from",
               partOfSpeech: "v",
-              translation: "Kiềm chế (làm một việc gì)",
+              translation: "Kiềm chế",
               example: "Please refrain from making personal comments.",
               exampleTranslation: "Vui lòng kiềm chế không bình luận cá nhân.",
               phonetic: "rɪˈfreɪn frɒm",
@@ -508,7 +508,7 @@ export const courses: Course[] = [
             {
               term: "Promotion",
               partOfSpeech: "n",
-              translation: "Sự thăng tiến",
+              translation: "Thăng tiến",
               example: "She received a promotion for her hard work.",
               exampleTranslation: "Cô ấy được thăng tiến vì làm việc chăm chỉ.",
               phonetic: "prəˈmoʊʃən",
@@ -540,7 +540,7 @@ export const courses: Course[] = [
             {
               term: "Courtesy",
               partOfSpeech: "n",
-              translation: "Tác phong lịch sự, sự lịch sự",
+              translation: "Sự lịch sự",
               example: "Show courtesy to all your colleagues.",
               exampleTranslation: "Hãy thể hiện sự lịch sự đối với tất cả đồng nghiệp.",
               phonetic: "ˈkɜːrtəsi",
@@ -548,7 +548,7 @@ export const courses: Course[] = [
             {
               term: "Neutral",
               partOfSpeech: "adj",
-              translation: "Trung lập, trung tính",
+              translation: "Trung lập",
               example: "Try to maintain a neutral tone in discussions.",
               exampleTranslation: "Cố gắng duy trì một giọng điệu trung lập trong cuộc thảo luận.",
               phonetic: "ˈnjuːtrəl",
@@ -572,7 +572,7 @@ export const courses: Course[] = [
             {
               term: "Insight",
               partOfSpeech: "n",
-              translation: "Sự hiểu biết sâu sắc về một vấn đề",
+              translation: "Sự hiểu biết sâu sắc",
               example: "Your insight into the problem is valuable.",
               exampleTranslation: "Sự hiểu biết sâu sắc của bạn về vấn đề này rất quý giá.",
               phonetic: "ˈɪnˌsaɪt",
@@ -607,7 +607,7 @@ export const courses: Course[] = [
               {
                 term: "Appreciate",
                 partOfSpeech: "v",
-                translation: "trân trọng, ghi nhận",
+                translation: "Ghi nhận",
                 example: "We appreciate your prompt payment.",
                 exampleTranslation: "Chúng tôi ghi nhận việc thanh toán nhanh chóng của bạn.",
                 phonetic: "əˈpriːʃieɪt"
@@ -615,7 +615,7 @@ export const courses: Course[] = [
               {
                 term: "Attach",
                 partOfSpeech: "v",
-                translation: "đính kèm",
+                translation: "Đính kèm",
                 example: "Please attach the report to your email.",
                 exampleTranslation: "Vui lòng đính kèm báo cáo vào email của bạn.",
                 phonetic: "əˈtætʃ"
@@ -623,23 +623,23 @@ export const courses: Course[] = [
               {
                 term: "Attachment",
                 partOfSpeech: "n",
-                translation: "tài liệu đính kèm (dành cho email)",
+                translation: "Tài liệu đính kèm",
                 example: "The attachment contains the meeting agenda.",
-                exampleTranslation: "Tài liệu đính kèm chứa chương trình nghị sự của cuộc họp.",
+                exampleTranslation: "Tài liệu đính kèm (dành cho email) chứa chương trình nghị sự của cuộc họp.",
                 phonetic: "əˈtætʃmənt"
               },
               {
                 term: "Enclosure",
                 partOfSpeech: "n",
-                translation: "tài liệu đính kèm (dành cho thư tay)",
+                translation: "Tài liệu đính kèm",
                 example: "The enclosure with this letter is my resume.",
-                exampleTranslation: "Tài liệu đính kèm với lá thư này là sơ yếu lý lịch của tôi.",
+                exampleTranslation: "Tài liệu đính kèm (dành cho thư tay) với lá thư này là sơ yếu lý lịch của tôi.",
                 phonetic: "ɪnˈkloʊʒər"
               },
               {
                 term: "Complain about",
                 partOfSpeech: "phr v",
-                translation: "phàn nàn về",
+                translation: "Phàn nàn về",
                 example: "Customers complain about the slow service.",
                 exampleTranslation: "Khách hàng phàn nàn về dịch vụ chậm chạp.",
                 phonetic: "kəmˈpleɪn əˈbaʊt"
@@ -647,7 +647,7 @@ export const courses: Course[] = [
               {
                 term: "Complaint",
                 partOfSpeech: "n",
-                translation: "lời phàn nàn",
+                translation: "Lời phàn nàn",
                 example: "We have received a complaint from a customer.",
                 exampleTranslation: "Chúng tôi đã nhận được một lời phàn nàn từ một khách hàng.",
                 phonetic: "kəmˈpleɪnt"
@@ -655,7 +655,7 @@ export const courses: Course[] = [
               {
                 term: "Contact",
                 partOfSpeech: "v",
-                translation: "liên hệ",
+                translation: "Liên hệ",
                 example: "You can contact me by phone or email.",
                 exampleTranslation: "Bạn có thể liên hệ với tôi qua điện thoại hoặc email.",
                 phonetic: "ˈkɒntækt"
@@ -663,17 +663,17 @@ export const courses: Course[] = [
               {
                 term: "Postpone",
                 partOfSpeech: "v",
-                translation: "trì hoãn",
+                translation: "Trì hoãn",
                 example: "We have to postpone the meeting until next week.",
-                exampleTranslation: "Chúng ta phải hoãn cuộc họp đến tuần sau.",
+                exampleTranslation: "Chúng ta phải trì hoãn cuộc họp đến tuần sau.",
                 phonetic: "poʊstˈpoʊn"
               },
               {
                 term: "Put off",
                 partOfSpeech: "phr v",
-                translation: "Trì hoãn (thân mật)",
+                translation: "Trì hoãn",
                 example: "Don't put off your homework until the last minute.",
-                exampleTranslation: "Đừng trì hoãn bài tập về nhà của bạn cho đến phút cuối cùng.",
+                exampleTranslation: "Đừng trì hoãn (thân mật) bài tập về nhà của bạn cho đến phút cuối cùng.",
                 phonetic: "pʊt ɒf"
               },
               {
@@ -681,21 +681,21 @@ export const courses: Course[] = [
                 partOfSpeech: "v",
                 translation: "Yêu cầu",
                 example: "This job requires a lot of experience.",
-                exampleTranslation: "Công việc này đòi hỏi rất nhiều kinh nghiệm.",
+                exampleTranslation: "Công việc này yêu cầu (đòi hỏi) rất nhiều kinh nghiệm.",
                 phonetic: "rɪˈkwaɪər"
               },
               {
                 term: "Hesitate",
                 partOfSpeech: "v",
-                translation: "ngần ngại, do dự",
+                translation: "Ngần ngại",
                 example: "Don't hesitate to ask if you have any questions.",
-                exampleTranslation: "Đừng ngần ngại hỏi nếu bạn có bất kỳ câu hỏi nào.",
+                exampleTranslation: "Đừng ngần ngại (do dự) hỏi nếu bạn có bất kỳ câu hỏi nào.",
                 phonetic: "ˈhɛzɪteɪt"
               },
               {
                 term: "Damage",
                 partOfSpeech: "n",
-                translation: "thiệt hại",
+                translation: "Thiệt hại",
                 example: "The storm caused a lot of damage to the building.",
                 exampleTranslation: "Cơn bão đã gây ra nhiều thiệt hại cho tòa nhà.",
                 phonetic: "ˈdæmɪdʒ"
@@ -703,7 +703,7 @@ export const courses: Course[] = [
               {
                 term: "Assistance",
                 partOfSpeech: "n",
-                translation: "sự hỗ trợ",
+                translation: "Sự hỗ trợ",
                 example: "We need your assistance to complete this project.",
                 exampleTranslation: "Chúng tôi cần sự hỗ trợ của bạn để hoàn thành dự án này.",
                 phonetic: "əˈsɪstəns"
@@ -711,15 +711,15 @@ export const courses: Course[] = [
               {
                 term: "Subject",
                 partOfSpeech: "n",
-                translation: "tiêu đề thư email",
+                translation: "Tiêu đề thư email",
                 example: "The subject of the email was 'Meeting Confirmation'.",
-                exampleTranslation: "Chủ đề của email là 'Xác nhận cuộc họp'.",
+                exampleTranslation: "Tiêu đề thư email là 'Xác nhận cuộc họp'.",
                 phonetic: "ˈsʌbdʒɛkt"
               },
               {
                 term: "Signature",
                 partOfSpeech: "n",
-                translation: "chữ ký",
+                translation: "Chữ ký",
                 example: "Please put your signature at the bottom of the page.",
                 exampleTranslation: "Vui lòng đặt chữ ký của bạn ở cuối trang.",
                 phonetic: "ˈsɪɡnətʃər"
@@ -727,7 +727,7 @@ export const courses: Course[] = [
               {
                 term: "Spam",
                 partOfSpeech: "n",
-                translation: "thư rác",
+                translation: "Thư rác",
                 example: "My inbox is full of spam.",
                 exampleTranslation: "Hộp thư đến của tôi đầy thư rác.",
                 phonetic: "spæm"
@@ -735,7 +735,7 @@ export const courses: Course[] = [
               {
                 term: "Long-standing",
                 partOfSpeech: "adj",
-                translation: "lâu dài",
+                translation: "Lâu dài",
                 example: "We have a long-standing relationship with this client.",
                 exampleTranslation: "Chúng tôi có mối quan hệ lâu dài với khách hàng này.",
                 phonetic: "ˌlɔːŋˈstændɪŋ"
@@ -743,7 +743,7 @@ export const courses: Course[] = [
               {
                 term: "Prompt",
                 partOfSpeech: "adj",
-                translation: "nhanh",
+                translation: "Nhanh chóng",
                 example: "Thank you for your prompt reply.",
                 exampleTranslation: "Cảm ơn bạn đã trả lời nhanh chóng.",
                 phonetic: "prɒmpt"
@@ -751,7 +751,7 @@ export const courses: Course[] = [
               {
                 term: "Formal",
                 partOfSpeech: "adj",
-                translation: "trang trọng",
+                translation: "Trang trọng",
                 example: "This is a formal event, so please dress appropriately.",
                 exampleTranslation: "Đây là một sự kiện trang trọng, vì vậy vui lòng ăn mặc phù hợp.",
                 phonetic: "ˈfɔːməl"
@@ -759,7 +759,7 @@ export const courses: Course[] = [
               {
                 term: "Informal",
                 partOfSpeech: "adj",
-                translation: "thân mật",
+                translation: "Thân mật",
                 example: "You can use informal language with your friends.",
                 exampleTranslation: "Bạn có thể sử dụng ngôn ngữ thân mật với bạn bè của mình.",
                 phonetic: "ɪnˈfɔːməl"
@@ -767,7 +767,7 @@ export const courses: Course[] = [
               {
                 term: "Concerning",
                 partOfSpeech: "prep",
-                translation: "Về, liên quan đến",
+                translation: "Về việc",
                 example: "I am writing to you concerning the job opening.",
                 exampleTranslation: "Tôi viết thư cho bạn về việc mở cửa việc làm.",
                 phonetic: "kənˈsɜːrnɪŋ"
@@ -775,7 +775,7 @@ export const courses: Course[] = [
               {
                 term: "Regarding",
                 partOfSpeech: "prep",
-                translation: "Về, liên quan đến",
+                translation: "Liên quan đến",
                 example: "I have a question regarding your new product.",
                 exampleTranslation: "Tôi có một câu hỏi liên quan đến sản phẩm mới của bạn.",
                 phonetic: "rɪˈɡɑːrdɪŋ"
@@ -783,7 +783,7 @@ export const courses: Course[] = [
               {
                 term: "With regard to",
                 partOfSpeech: "prep",
-                translation: "Về, liên quan đến",
+                translation: "Về",
                 example: "With regard to your request, we have decided to approve it.",
                 exampleTranslation: "Về yêu cầu của bạn, chúng tôi đã quyết định phê duyệt nó.",
                 phonetic: "wɪð rɪˈɡɑːrd tuː"
@@ -791,7 +791,7 @@ export const courses: Course[] = [
               {
                 term: "With reference to",
                 partOfSpeech: "prep",
-                translation: "Theo, theo như",
+                translation: "Theo như",
                 example: "With reference to our conversation, I am sending you the details.",
                 exampleTranslation: "Theo như cuộc trò chuyện của chúng ta, tôi đang gửi cho bạn các chi tiết.",
                 phonetic: "wɪð ˈrɛfərəns tuː"
@@ -801,18 +801,221 @@ export const courses: Course[] = [
                 partOfSpeech: "phr v",
                 translation: "Mong đợi",
                 example: "I look forward to hearing from you soon.",
-                exampleTranslation: "Tôi mong sớm nhận được phản hồi từ bạn.",
+                exampleTranslation: "Tôi mong đợi (sớm) nhận được phản hồi từ bạn.",
                 phonetic: "lʊk ˈfɔːrwərd tuː"
               },
               {
                 term: "Regret",
                 partOfSpeech: "v",
-                translation: "tiếc",
+                translation: "Tiếc",
                 example: "We regret to inform you that your application has been rejected.",
                 exampleTranslation: "Chúng tôi rất tiếc phải thông báo với bạn rằng đơn đăng ký của bạn đã bị từ chối.",
                 phonetic: "rɪˈɡrɛt"
               }
             ]
+            : i === 2
+            ? [
+                {
+                  term: "Presentation",
+                  partOfSpeech: "n",
+                  translation: "Bài thuyết trình",
+                  example: "She gave an excellent presentation on market trends.",
+                  exampleTranslation: "Cô ấy đã có một bài thuyết trình xuất sắc về xu hướng thị trường.",
+                  phonetic: "ˌprɛzənˈteɪʃən",
+                },
+                {
+                  term: "Attendee",
+                  partOfSpeech: "n",
+                  translation: "người tham dự",
+                  example: "All attendees received a meeting agenda.",
+                  exampleTranslation: "Tất cả những người tham dự đều nhận được chương trình nghị sự cuộc họp.",
+                  phonetic: "əˌtɛnˈdiː",
+                },
+                {
+                  term: "Brochure",
+                  partOfSpeech: "n",
+                  translation: "Tập quảng cáo",
+                  example: "Please take a brochure with our company information.",
+                  exampleTranslation: "Vui lòng lấy một tập quảng cáo có thông tin công ty của chúng tôi.",
+                  phonetic: "broʊˈʃʊr",
+                },
+                {
+                  term: "Illustrate",
+                  partOfSpeech: "v",
+                  translation: "Minh họa",
+                  example: "Let me illustrate this point with a graph.",
+                  exampleTranslation: "Để tôi minh họa điểm này bằng một biểu đồ.",
+                  phonetic: "ˈɪləˌstreɪt",
+                },
+                {
+                  term: "Figure",
+                  partOfSpeech: "n",
+                  translation: "Con số",
+                  example: "The figures show a 15% increase in sales.",
+                  exampleTranslation: "Các con số cho thấy doanh số tăng 15%.",
+                  phonetic: "ˈfɪɡjər",
+                },
+                {
+                  term: "Circulate",
+                  partOfSpeech: "v",
+                  translation: "Chuyển",
+                  example: "I'll circulate the meeting notes to everyone.",
+                  exampleTranslation: "Tôi sẽ chuyển biên bản cuộc họp cho mọi người.",
+                  phonetic: "ˈsɜːrkjəˌleɪt",
+                },
+                {
+                  term: "Delegate",
+                  partOfSpeech: "n",
+                  translation: "Đại biểu",
+                  example: "Each delegate will have 5 minutes to speak.",
+                  exampleTranslation: "Mỗi đại biểu sẽ có 5 phút để phát biểu.",
+                  phonetic: "ˈdɛləɡət",
+                },
+                {
+                  term: "Audience",
+                  partOfSpeech: "n",
+                  translation: "Khán giả",
+                  example: "The audience was very engaged during the presentation.",
+                  exampleTranslation: "Khán giả rất tập trung trong suốt bài thuyết trình.",
+                  phonetic: "ˈɔːdiəns",
+                },
+                {
+                  term: "Handout",
+                  partOfSpeech: "n",
+                  translation: "Tài liệu phát tay",
+                  example: "Please refer to the handout on page 3.",
+                  exampleTranslation: "Vui lòng tham khảo tài liệu phát tay ở trang 3.",
+                  phonetic: "ˈhændaʊt",
+                },
+                {
+                  term: "Show",
+                  partOfSpeech: "v",
+                  translation: "Cho xem",
+                  example: "Let me show you the results of our survey.",
+                  exampleTranslation: "Để tôi cho bạn xem kết quả cuộc khảo sát của chúng tôi.",
+                  phonetic: "ʃoʊ",
+                },
+                {
+                  term: "Bar chart",
+                  partOfSpeech: "n",
+                  translation: "Biểu đồ dạng cột",
+                  example: "This bar chart compares our quarterly performance.",
+                  exampleTranslation: "Biểu đồ dạng cột này so sánh hiệu suất theo quý của chúng ta.",
+                  phonetic: "bɑːr tʃɑːrt",
+                },
+                {
+                  term: "Graph",
+                  partOfSpeech: "n",
+                  translation: "Đồ thị",
+                  example: "The graph clearly shows the upward trend.",
+                  exampleTranslation: "Đồ thị cho thấy rõ ràng xu hướng tăng trưởng.",
+                  phonetic: "ɡræf",
+                },
+                {
+                  term: "Diagram",
+                  partOfSpeech: "n",
+                  translation: "Sơ đồ thể hiện quá trình",
+                  example: "This diagram illustrates our production process.",
+                  exampleTranslation: "Sơ đồ này minh họa quy trình sản xuất của chúng ta.",
+                  phonetic: "ˈdaɪəˌɡræm",
+                },
+                {
+                  term: "Flip chart",
+                  partOfSpeech: "n",
+                  translation: "Bảng kẹp giấy",
+                  example: "Please write your ideas on the flip chart.",
+                  exampleTranslation: "Vui lòng viết ý tưởng của bạn lên bảng kẹp giấy.",
+                  phonetic: "flɪp tʃɑːrt",
+                },
+                {
+                  term: "Approach",
+                  partOfSpeech: "n/v",
+                  translation: "Tiếp cận",
+                  example: "We need a new approach to solve this problem.",
+                  exampleTranslation: "Chúng ta cần một cách tiếp cận mới để giải quyết vấn đề này.",
+                  phonetic: "əˈproʊtʃ",
+                },
+                {
+                  term: "Bicker",
+                  partOfSpeech: "v",
+                  translation: "Cãi nhau",
+                  example: "Stop bickering and focus on the main issue.",
+                  exampleTranslation: "Hãy dừng việc cãi nhau và tập trung vào vấn đề chính.",
+                  phonetic: "ˈbɪkər",
+                },
+                {
+                  term: "Talk over",
+                  partOfSpeech: "phr v",
+                  translation: "Nói lấn lướt",
+                  example: "Please don't talk over me when I'm speaking.",
+                  exampleTranslation: "Vui lòng đừng nói lấn lướt khi tôi đang phát biểu.",
+                  phonetic: "tɔːk ˈoʊvər",
+                },
+                {
+                  term: "Take note",
+                  partOfSpeech: "phr v",
+                  translation: "Ghi chép",
+                  example: "Please take note of the important points.",
+                  exampleTranslation: "Vui lòng ghi chép những điểm quan trọng.",
+                  phonetic: "teɪk noʊt",
+                },
+                {
+                  term: "Jargon",
+                  partOfSpeech: "n",
+                  translation: "Biệt ngữ",
+                  example: "Avoid using technical jargon with new employees.",
+                  exampleTranslation: "Tránh sử dụng biệt ngữ kỹ thuật với nhân viên mới.",
+                  phonetic: "ˈdʒɑːrɡən",
+                },
+                {
+                  term: "Objection",
+                  partOfSpeech: "n",
+                  translation: "Phản đối",
+                  example: "Do you have any objection to this proposal?",
+                  exampleTranslation: "Bạn có phản đối gì với đề xuất này không?",
+                  phonetic: "əbˈdʒɛkʃən",
+                },
+                {
+                  term: "Outline",
+                  partOfSpeech: "v/n",
+                  translation: "Phác thảo",
+                  example: "Let me outline the main points of our discussion.",
+                  exampleTranslation: "Để tôi phác thảo những điểm chính của cuộc thảo luận của chúng ta.",
+                  phonetic: "ˈaʊtˌlaɪn",
+                },
+                {
+                  term: "Section",
+                  partOfSpeech: "n",
+                  translation: "Phần",
+                  example: "We'll discuss this in the next section of the meeting.",
+                  exampleTranslation: "Chúng ta sẽ thảo luận điều này trong phần tiếp theo của cuộc họp.",
+                  phonetic: "ˈsɛkʃən",
+                },
+                {
+                  term: "Agenda",
+                  partOfSpeech: "n",
+                  translation: "Lịch",
+                  example: "The agenda for today's meeting is on your desk.",
+                  exampleTranslation: "Lịch trình nghị sự cho cuộc họp hôm nay ở trên bàn của bạn.",
+                  phonetic: "əˈdʒɛndə",
+                },
+                {
+                  term: "Visual",
+                  partOfSpeech: "n",
+                  translation: "Hình ảnh",
+                  example: "Please use more visuals in your presentation.",
+                  exampleTranslation: "Vui lòng sử dụng nhiều hình ảnh hơn trong bài thuyết trình của bạn.",
+                  phonetic: "ˈvɪʒuəl",
+                },
+                {
+                  term: "Signpost",
+                  partOfSpeech: "n",
+                  translation: "Dấu hiệu",
+                  example: "Use signposts to guide your audience through the presentation.",
+                  exampleTranslation: "Sử dụng các dấu hiệu để hướng dẫn khán giả trong suốt bài thuyết trình.",
+                  phonetic: "ˈsaɪnˌpoʊst",
+                },
+              ]
             : i === 3
               ? [
                 {
