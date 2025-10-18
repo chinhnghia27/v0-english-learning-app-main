@@ -49,7 +49,7 @@ export function HeroSection() {
   }
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-primary/20 via-background to-secondary/20 py-20 md:py-32">
+    <section className="min-h-screen relative flex items-center overflow-hidden bg-gradient-to-br from-primary/20 via-background to-secondary/20 py-20 md:py-32">
       <div className="container mx-auto px-4">
         <div className="mx-auto max-w-6xl text-center">
           <h1 className="mb-6 flex flex-col items-center text-5xl font-extrabold leading-[1.3] tracking-tight md:text-7xl">
@@ -83,7 +83,11 @@ export function HeroSection() {
             initial="hidden"
             animate={isTitleAnimated ? "visible" : "hidden"}
           >
-            <Button size="lg" className="w-full sm:w-auto font-bold cursor-pointer" onClick={handleScrollToCourses}>
+            <Button
+              size="lg"
+              className="w-full sm:w-auto px-8 py-4 text-lg font-bold cursor-pointer"
+              onClick={handleScrollToCourses}
+            >
               Bắt Đầu Học Ngay
             </Button>
           </motion.div>
