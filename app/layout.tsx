@@ -25,6 +25,23 @@ export const metadata: Metadata = {
       { url: "/favicon-60x60.png", sizes: "60x60", type: "image/png" },
     ],
   },
+  openGraph: {
+    title: "Ôn Tập Tiếng Anh Thương Mại Dành Cho Sinh Viên HAUI",
+    description: "Website miễn phí giúp sinh viên Đại học Công Nghiệp Hà Nội ôn tập Tiếng Anh Thương Mại một cách nhanh chóng, hiệu quả, và tiện lợi.",
+    url: "https://ontaptatmhaui.vercel.app/",
+    siteName: "Ôn Tập Tiếng Anh Thương Mại Dành Cho Sinh Viên HAUI",
+    images: [
+      {
+        url: "/favicon-70x70.png",
+        width: 70,
+        height: 70,
+        alt: "Favicon",
+        type: "image/png",
+      },
+    ],
+    locale: "vi_VN",
+    type: "website",
+  },
 }
 
 export default function RootLayout({
