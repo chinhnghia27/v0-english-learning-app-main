@@ -76,24 +76,24 @@ export function VocabularySection({ vocabulary }: VocabularySectionProps) {
                     <div className="flex items-start justify-between gap-2">
                       <div>
                         <div className="flex items-center gap-2">
-                          <span className="text-lg font-semibold text-foreground">{item.term}</span>
+                          <span className="text-lg font-bold text-foreground">{item.term}</span>
                           <span className="font-bold shrink-0 text-[12px] uppercase tracking-wide text-primary/80 bg-primary/10 px-1.5 py-0.5 rounded">
                             {item.partOfSpeech}
                           </span>
                         </div>
-                        <div className="mt-1 text-sm text-muted-foreground">{item.translation}</div>
+                        <div className="font-bold mt-1 text-sm text-muted-foreground">{item.translation}</div>
                       </div>
                     </div>
                   </div>
 
                   {/* Example sentence in English */}
                   <div className="mb-3 rounded-lg bg-blue-50 p-3 dark:bg-blue-950">
-                    <p className="text-sm italic text-foreground">{highlightTerm(item.example, item.term)}</p>
+                    <p className="text-sm italic text-foreground font-semibold">{highlightTerm(item.example, item.term)}</p>
                   </div>
 
                   {/* Example translation in Vietnamese */}
                   <div className="rounded-lg bg-green-50 p-3 dark:bg-green-950">
-                    <p className="text-sm text-muted-foreground">
+                    <p className="text-sm text-muted-foreground font-semibold">
                       {highlightTerm(item.exampleTranslation, item.translation)}
                     </p>
                   </div>

@@ -85,7 +85,7 @@ export function HeroSection() {
           >
             <Button
               size="lg"
-              className="w-full sm:w-auto px-8 py-4 text-lg font-bold cursor-pointer"
+              className="w-full sm:w-auto px-8 py-4 text-lg font-semibold cursor-pointer"
               onClick={handleScrollToCourses}
             >
               Bắt Đầu Học Ngay

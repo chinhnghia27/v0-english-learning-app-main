@@ -65,7 +65,7 @@ export default function UnitPage({
                   <CardDescription className="font-semibold">Luyện tập kỹ năng {skill.name.toLowerCase()} với bài tập tương tác</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <Button asChild className="w-full font-extrabold">
+                  <Button asChild className="w-full font-bold">
                     <Link href={`/course/${course.slug}/${unit.slug}/${skill.id}`}>Bắt Đầu Luyện Tập</Link>
                   </Button>
                 </CardContent>
