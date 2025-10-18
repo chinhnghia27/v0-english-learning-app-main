@@ -58,7 +58,7 @@ export default function SkillPage({
         </div>
       </div>
 
-      <section className="py-16">
+      <section className="pt-16 0 0 0">
         <div className="container mx-auto px-4">
           <div className="grid gap-8 lg:grid-cols-3">
             {/* Exercise section - takes 2 columns on large screens */}
@@ -77,11 +77,11 @@ export default function SkillPage({
                 </div>
               ))}
 
-              <div className="flex gap-4">
+              {/* <div className="flex gap-4">
                 <Button asChild variant="outline">
                   <Link href={`/course/${course.slug}/${unit.slug}`}>Quay Lại</Link>
                 </Button>
-              </div>
+              </div> */}
             </div>
 
             {/* Vocabulary sidebar - takes 1 column on large screens */}
