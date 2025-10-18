@@ -11,6 +11,9 @@ export const metadata: Metadata = {
   title: "Ôn Tập Tiếng Anh Thương Mại Dành Cho Sinh Viên HAUI",
   description: "Website miễn phí giúp sinh viên Đại học Công Nghiệp Hà Nội ôn tập Tiếng Anh Thương Mại một cách nhanh chóng, hiệu quả, và tiện lợi.",
   generator: "v0.app",
+  icons: {
+    icon: "/favicon.ico",
+  },
 }
 
 export default function RootLayout({
