@@ -17,8 +17,8 @@ export function CourseCard({ course }: CourseCardProps) {
       </CardHeader>
       <CardContent className="mt-auto">
         <div className="mb-4 flex items-center gap-2 text-sm text-muted-foreground">
-          <span className="rounded-full bg-muted px-3 py-1">8 Units</span>
-          <span className="rounded-full bg-muted px-3 py-1">5 Skills</span>
+          <span className="rounded-full bg-muted px-3 py-1 font-semibold">8 Units</span>
+          <span className="rounded-full bg-muted px-3 py-1 font-semibold">5 Skills</span>
         </div>
         <Button asChild className="w-full font-bold">
           <Link href={`/course/${course.slug}`}>Xem Các Unit</Link>

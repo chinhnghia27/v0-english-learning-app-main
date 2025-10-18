@@ -69,7 +69,7 @@ export function HeroSection() {
             </span>
           </h1>
           <motion.p
-            className="mb-8 text-pretty text-lg text-muted-foreground md:text-xl"
+            className="mb-8 text-pretty text-lg text-muted-foreground md:text-xl font-semibold"
             variants={contentVariants}
             initial="hidden"
             animate={isTitleAnimated ? "visible" : "hidden"}

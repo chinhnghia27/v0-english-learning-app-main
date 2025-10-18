@@ -11,7 +11,7 @@ export function VocabularySidebar({ vocabulary, unitTitle }: VocabularySidebarPr
   return (
     <aside className="sticky top-4 h-fit rounded-xl border bg-card/80 p-6 shadow-lg backdrop-blur supports-[backdrop-filter]:bg-card/70">
       <h3 className="mb-5 text-lg font-extrabold tracking-tight">Từ Vựng {unitTitle}</h3>
-      <div className="space-y-3 max-h-[600px] overflow-y-auto overscroll-y-contain pr-1">
+      <div className="space-y-3 max-h-[600px] overflow-y-auto overscroll-y-contain pr-1 custom-scrollbar">
         {vocabulary.map((vocab, index) => (
           <div
             key={index}
@@ -21,7 +21,7 @@ export function VocabularySidebar({ vocabulary, unitTitle }: VocabularySidebarPr
               <div className="flex items-baseline gap-2 min-w-0">
                 <span className="truncate font-extrabold text-foreground">{vocab.term}</span>
                 {vocab.phonetic ? (
-                  <span className="shrink-0 text-xs font-semibold text-muted-foreground/80">[{vocab.phonetic}]</span>
+                  <span className="shrink-0 text-sm font-semibold text-muted-foreground/80">[{vocab.phonetic}]</span>
                 ) : null}
                 <span className="font-semibold shrink-0 text-[10px] uppercase tracking-wide text-primary/80 bg-primary/10 px-1.5 py-0.5 rounded">
                   {vocab.partOfSpeech}

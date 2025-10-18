@@ -29,8 +29,8 @@ export default function CoursePage({ params }: { params: { courseId: string } })
               Về Trang Chủ
             </Link>
           </Button>
-          <h1 className="mb-4 text-5xl font-bold text-white">{course.name}</h1>
-          <p className="text-xl text-white/90">{course.description}</p>
+          <h1 className="mb-4 text-5xl font-extrabold text-white">{course.name}</h1>
+          <p className="text-xl text-white/90 font-semibold">{course.description}</p>
         </div>
       </div>
 

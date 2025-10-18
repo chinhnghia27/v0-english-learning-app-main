@@ -20,14 +20,14 @@ export default function SkillPage({
 
   return (
     <main className="min-h-screen">
-      <div className="relative overflow-hidden py-16 md:py-24">
+      <div className="relative overflow-hidden py-12 md:py-16">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage: `url(https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg)`,
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
+        <div className="absolute inset-0 bg-black/60" />
         <div className="container relative mx-auto px-4">
           <div className="mb-6 flex flex-wrap gap-3">
             <Button asChild variant="outline" className="border-white/20 bg-white/10 text-white backdrop-blur-sm hover:bg-white/20">

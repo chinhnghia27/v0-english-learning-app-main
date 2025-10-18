@@ -27,7 +27,7 @@ export default function UnitPage({
             backgroundImage: `url(https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg)`,
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
+        <div className="absolute inset-0 bg-black/60" />
         <div className="container relative mx-auto px-4">
           <Button asChild variant="outline" className="mb-6 border-white/20 bg-white/10 text-white backdrop-blur-sm hover:bg-white/20">
             <Link href={`/course/${course.slug}`}>
@@ -41,8 +41,8 @@ export default function UnitPage({
               Về trang chủ
             </Link>
           </Button>
-          <h1 className="mb-4 text-5xl font-bold text-white">{unit.title}</h1>
-          <p className="text-xl text-white/90">{unit.description}</p>
+          <h1 className="mb-4 text-5xl font-extrabold text-white">{unit.title}</h1>
+          <p className="text-xl text-white/90 font-semibold">{unit.description}</p>
         </div>
       </div>
 
