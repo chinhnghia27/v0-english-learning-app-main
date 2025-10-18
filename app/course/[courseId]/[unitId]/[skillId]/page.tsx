@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { getCourse, getUnit, getSkill } from "@/lib/data"
 import { ChevronLeft } from "lucide-react"
 import { VocabularySidebar } from "@/components/vocabulary-sidebar"
+import { ScrollToTop } from "@/components/ui/scroll-to-top"
 
 export default function SkillPage({
   params,
@@ -90,6 +91,7 @@ export default function SkillPage({
           </div>
         </div>
       </section>
+      <ScrollToTop />
     </main>
   )
 }

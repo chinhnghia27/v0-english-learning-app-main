@@ -5,6 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { getCourse, getUnit } from "@/lib/data"
 import { VocabularySection } from "@/components/vocabulary-section"
 import { ChevronLeft, Home } from "lucide-react"
+import { ScrollToTop } from "@/components/ui/scroll-to-top"
 
 export default function UnitPage({
   params,
@@ -75,6 +76,7 @@ export default function UnitPage({
       </section>
 
       <VocabularySection vocabulary={unit.vocabulary} />
+      <ScrollToTop />
     </main>
   )
 }
