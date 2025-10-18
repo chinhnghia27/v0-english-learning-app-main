@@ -28,7 +28,7 @@ export function VocabularySection({ vocabulary }: VocabularySectionProps) {
       <div className="container mx-auto px-4">
         <div className="mb-12">
           <h2 className="mb-4 text-3xl font-extrabold">Từ Vựng Chính</h2>
-          <p className="text-lg text-muted-foreground font-semibold">Danh sách các từ vựng quan trọng trong unit này</p>
+          <p className="text-lg text-muted-foreground font-semibold">Danh sách các từ vựng quan trọng trong Unit này</p>
         </div>
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
