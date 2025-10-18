@@ -12,7 +12,18 @@ export const metadata: Metadata = {
   description: "Website miễn phí giúp sinh viên Đại học Công Nghiệp Hà Nội ôn tập Tiếng Anh Thương Mại một cách nhanh chóng, hiệu quả, và tiện lợi.",
   generator: "v0.app",
   icons: {
-    icon: "/favicon.ico",
+    icon: [
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-57x57.png", sizes: "57x57", type: "image/png" },
+      { url: "/favicon-60x60.png", sizes: "60x60", type: "image/png" },
+      { url: "/favicon-70x70.png", sizes: "70x70", type: "image/png" },
+    ],
+    shortcut: [{ url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" }],
+    apple: [
+      { url: "/favicon-57x57.png", sizes: "57x57", type: "image/png" },
+      { url: "/favicon-60x60.png", sizes: "60x60", type: "image/png" },
+    ],
   },
 }
 
