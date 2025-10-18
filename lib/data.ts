@@ -28,7 +28,7 @@ export interface Course {
   slug: string
   name: string
   description: string
-  color: string
+  backgroundImage: string
   units: Unit[]
 }
 
@@ -38,7 +38,7 @@ export const courses: Course[] = [
     slug: "ta-tmcb01",
     name: "Tiếng Anh TMCB 1",
     description: "English for business communication and professional settings",
-    color: "bg-primary",
+    backgroundImage: "https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg",
     units: Array.from({ length: 8 }, (_, i) => ({
       id: i + 1,
       slug: `unit-${i + 1}`,
@@ -125,7 +125,7 @@ export const courses: Course[] = [
     slug: "ta-tmcb02",
     name: "Tiếng Anh TMCB 2",
     description: "English for engineering and technical fields",
-    color: "bg-secondary",
+    backgroundImage: "https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg",
     units: Array.from({ length: 8 }, (_, i) => ({
       id: i + 1,
       slug: `unit-${i + 1}`,
@@ -212,7 +212,7 @@ export const courses: Course[] = [
     slug: "ta-tmcb03",
     name: "Tiếng Anh TMCB 3",
     description: "English for healthcare and medical professionals",
-    color: "bg-accent",
+    backgroundImage: "https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg",
     units: Array.from({ length: 8 }, (_, i) => ({
       id: i + 1,
       slug: `unit-${i + 1}`,
@@ -299,7 +299,7 @@ export const courses: Course[] = [
     slug: "ta-tmcb04",
     name: "Tiếng Anh TMCB 4",
     description: "English for hospitality and tourism industry",
-    color: "bg-chart-4",
+    backgroundImage: "https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg",
     units: Array.from({ length: 8 }, (_, i) => ({
       id: i + 1,
       slug: `unit-${i + 1}`,
@@ -386,7 +386,7 @@ export const courses: Course[] = [
     slug: "ta-tmcb05",
     name: "Tiếng Anh TMCB 5",
     description: "English for information technology and software development",
-    color: "bg-chart-5",
+    backgroundImage: "https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg",
     units: Array.from({ length: 8 }, (_, i) => {
       const vocabularyUrls =
         i === 0
@@ -1010,7 +1010,7 @@ export const courses: Course[] = [
     slug: "ta-tm",
     name: "Tiếng Anh Thương Mại",
     description: "English for law and legal professionals",
-    color: "bg-chart-2",
+    backgroundImage: "https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg",
     units: Array.from({ length: 8 }, (_, i) => ({
       id: i + 1,
       slug: `unit-${i + 1}`,
